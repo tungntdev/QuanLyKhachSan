@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyKhachSan" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-L8JMH5Q\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True" SettingsObjectName="QuanLyKhachSan.Properties.Settings" SettingsPropertyName="QuanLyKhachSanConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblDoDung" Member="tblDoDungs">
+    <Type Name="tblDoDung">
+      <Column Name="IDDoDung" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDoDung" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPhong" Member="tblPhongs">
+    <Type Name="tblPhong">
+      <Column Name="IDPhong" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SucChua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GiaPhong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TrangThai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDichVu" Member="tblDichVus">
+    <Type Name="tblDichVu">
+      <Column Name="IDDichVu" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDichVu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GiaThanh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
